@@ -1,0 +1,124 @@
+/* InteractiveFeatures.module.css */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  .interactiveColumn,
+  .analyticsColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 1rem;
+  }
+  
+  .pollQuestion {
+    font-size: 1.125rem;
+    margin: 0 0 1.5rem;
+  }
+  
+  .optionsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+  
+  .pollOption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background: #f0f7ff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .pollOption:hover {
+    background: #e3f2fd;
+  }
+  
+  .optionText {
+    font-size: 0.875rem;
+  }
+  
+  .voteCount {
+    font-size: 0.75rem;
+    color: #1976d2;
+  }
+  
+  .questionList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .questionItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.75rem;
+    background: #f5f5f5;
+    border-radius: 8px;
+  }
+  
+  .questionText {
+    font-size: 0.875rem;
+    margin: 0;
+    flex: 1;
+  }
+  
+  .username {
+    font-size: 0.75rem;
+    color: #1976d2;
+    background: #e3f2fd;
+    padding: 0.25rem 0.75rem;
+    border-radius: 16px;
+    white-space: nowrap;
+    margin-left: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .layout {
+      grid-template-columns: 1fr;
+    }
+  
+    .card {
+      padding: 1rem;
+    }
+  
+    .optionsGrid {
+      grid-template-columns: 1fr;
+    }
+  
+    .questionItem {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .username {
+      margin-left: 0;
+    }
+  }
